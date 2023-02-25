@@ -1,8 +1,7 @@
 const textsToCopy = [
-    "Dieser Text wird kopiert.",
-    "Ein anderer Text.",
-    "Noch ein Text.",
-    "Ein weiterer Text.",
+    "Du hast ein Coolen Text kopiert",
+    "01763287769",
+    "https://discord.com/invite/32QNS3ZFZb",
   ];
   
   function copyToClipboard() {
