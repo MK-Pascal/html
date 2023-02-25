@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./root/css/index.css">
+    <title>MK-Team</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">MK</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Discord</a>
+                </li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">OK</a></li>
+            </ul>
+        </div>
+        <img src="./root/img/menu-burger.png" class="menu-burge" alt="menu-burge">
+
+    </nav>
+    
+    <header></header>
+    <div class="backimg centerX"></div>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-burge")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
