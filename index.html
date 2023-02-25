@@ -5,32 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./root/css/index.css">
+    <link rel="stylesheet" href="./root/css/context.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>MK-Team</title>
 </head>
-<body>
+<body  >
     <nav class="navbar">
-        <a href="#" class="logo">MK</a>
+        <img href="#" src="./root/img/MK-Logo-green.png" class="logo" oncontextmenu="return false" draggable="false">
         <div class="nav-links">
             <ul>
-                <li class="active"><a href="#">Discord</a>
+                <li class="active"><a href="https://discord.com/invite/32QNS3ZFZb">Discord</a>
                 </li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">OK</a></li>
             </ul>
         </div>
+        
         <img src="./root/img/menu-burger.png" class="menu-burge" alt="menu-burge">
 
     </nav>
+    <div class="mainholder">
+        <div class="mainbox glass">
+            <img class="foot centerX" src="./root/img/1020466523955023903.webp" onmouseover="moveImage(this)">
+        </div>
+    </div>
+    
     
     <header></header>
     <div class="backimg centerX"></div>
+    <div class="wrapper">
+        <div class="content">
+          <ul class="menu">
+            <li class="item">
+              <i class="uil uil-eye"></i>
+              <span>eye</span>
+            </li>
+            <li class="item">
+              <i class="uil uil-discord"></i>
+              <span>Discord</span>
+            </li>
+            <li class="item">
+              <i class="uil uil-share"></i>
+              <span>Share</span>
+            </li>
+            <li class="item">
+              <i class="uil uil-dollar-alt"></i>
+              <span>Thanks</span>
+            </li>
+            <div onclick="copyToClipboard()" class="ID">
+              <li class="item">
+                <i class="uil uil-copy"></i>
+                <span>ID Copy</span>
+              </li>
+            </div>
+            
+          </ul>
+        </div>
+      </div>
+  
+  
+      <script src="./root/js/copa.js"></script>
+      <script src="./root/js/comtextmenu.js"></script>
+      <script src="./root/js/mobil.js"></script>
+      <script src="./root/js/fangmich.js"></script>
+  
 </body>
-    <script>
-        const menuHamburger = document.querySelector(".menu-burge")
-        const navLinks = document.querySelector(".nav-links")
 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-    </script>
+
 </html>

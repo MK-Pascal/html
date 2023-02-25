@@ -1,0 +1,64 @@
+:root{
+  --conbg: #111214;
+  --conin: #111214;
+  --text: #FFFFFF;
+  --btn: #FFFFFF;
+  --btn1: #25282c;
+  --text_glow: 0px 0px 10px  #D2D2D2;
+}
+@font-face {
+  font-family: 'GothamBold';
+  src: url(../fonts/GothamBold.ttf);
+}
+*{
+  font-family: 'GothamBold';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+
+  min-height: 100vh;
+}
+.wrapper{
+  position: absolute;
+  visibility: hidden;
+  width: 200px;
+  background: var(--conbg);
+  border-radius: 10px;
+}
+.wrapper .menu{
+  padding: 10px 12px;
+}
+
+.content .item{
+  list-style: none;
+  font-size: 20px;
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  display: flex;
+  padding: 0 5px 0 10px;
+  align-items: center;
+  color: var(--text);
+  background: var(--conin);
+}
+
+.content .item:hover{
+  background: var(--btn1);
+}
+
+.content .item span{
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.content .ID{
+  display: flex;
+  margin-top: 5px;
+  padding:  5px 0 12px ;
+  border-top: 1px solid #ccc;
+}

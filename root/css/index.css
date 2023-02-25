@@ -1,5 +1,5 @@
 :root{
-    --bg: #111111;
+    --bg: #313338;
     --in: #383838;
     --text: #FFFFFF;
     --btn: #FFFFFF;
@@ -38,7 +38,7 @@ body{
 
 .navbar{
     position: absolute;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,9 +47,7 @@ body{
 }
 
 .navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
-    color: var(--text);
+    height: 50px;
 }
 
 .navbar a {
@@ -85,13 +83,35 @@ body{
     background-size: cover;
 
 }
-
-.glass{
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+.mainholder{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 700px;
+    width: 100vw;
 }
+.mainbox{
+    position: absolute;
+    top: 50%;
+    right: 16em;
+    transform: translate(+50%, -50%);
+    height: 500px;
+    width: 400px;
+    background: var(--in);
+    border: none;
+    background: rgba(34, 34, 34, 0.3);
+    border-radius: 20px;
+}
+
+.foot{
+    position: absolute;
+
+    top: 90%;
+    font-size: 14px;
+}
+
+
 
 .nav-links.mobile-menu {
     margin-left: 0;
@@ -100,18 +120,24 @@ body{
 @media screen and (max-width: 560px) {
 
     .navbar{
-        padding: 0;
+        padding: 0px;
     }
 
     .navbar .logo {
         position: absolute;
-        top: 40px;
-        left: 50px;
+        height: 60px;
+        top: 20px;
+        left: 20px;
     }
 
     .navbar .menu-burge{
         display: block;
+        position: absolute;
+        top: 30px;
+        z-index: 2;
     }
+
+
 
     .nav-links{
         top: 0;
@@ -126,6 +152,7 @@ body{
         align-items: center;
         margin-left: -100%;
         transition: all .25s ease;
+        z-index: 2;
 
     }
 
@@ -139,5 +166,28 @@ body{
         margin: 20px 0 ;
         font-size: 2em;
     }
+
+    .mainbox{
+        position: absolute;
+        top:  67%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 500px;
+        width: 100%;
+        background: var(--in);
+        border: none;
+        background: rgba(34, 34, 34, 0.3);
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+
+    }
     
+}
+
+.glass{
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
