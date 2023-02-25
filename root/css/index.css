@@ -14,6 +14,7 @@
     font-family: 'GothamBold';
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
     list-style: none;
 }
 body{
@@ -136,7 +137,7 @@ body{
 
     .navbar .nav-links ul li {
         margin: 20px 0 ;
-        font-size: 1.2em;
+        font-size: 2em;
     }
     
 }
