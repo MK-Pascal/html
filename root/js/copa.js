@@ -1,6 +1,6 @@
 const textsToCopy = [
     "Du hast ein Coolen Text kopiert",
-    "01763287769",
+    "Haha hier ist nichts",
     "https://discord.com/invite/32QNS3ZFZb",
   ];
   
